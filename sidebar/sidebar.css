@@ -4,7 +4,7 @@
     --header-height: 3rem;
     --nav-width: 68px;
     --first-color: #040b14;
-    --first-color-light: #ffffff5e;
+    --first-color-light: #ffffff71;
     --white-color: #F7F6FB;
 	--logo-hover-color: #149ddd;
     --body-font: 'Nunito', sans-serif;
@@ -20,7 +20,6 @@
 
 body {
     position: relative;
-	background-color: #151e29;
     margin: var(--header-height) 0 0 0;
     padding: 0 1rem;
     font-family: var(--body-font);
@@ -122,7 +121,7 @@ a {
 }
 
 .nav_icon {
-    font-size: 1.25rem
+    font-size: 1.25rem;
 }
 
 .show {
@@ -146,12 +145,20 @@ a {
     background-color: var(--white-color)
 }
 
-.height-100 {
+.content {
 	margin-top: var(--header-height);
     height: 100vh;
 }
 
 @media screen and (min-width: 768px) {
+	:root {
+		--nav-width: 100px;
+	}
+
+	.nav_icon {
+		font-size: 3rem;
+	}
+
     body {
         margin: calc(var(--header-height) + 1rem) 0 0 0;
         padding-left: calc(var(--nav-width) + 2rem)
@@ -162,7 +169,7 @@ a {
         padding: 0 2rem 0 calc(var(--nav-width) + 2rem)
     }
 
-	.height-100 {
+	.content {
 		margin-top: calc(var(--header-height) + 1rem);
 	}
 
