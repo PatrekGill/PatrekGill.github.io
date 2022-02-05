@@ -32,6 +32,9 @@
 --------------------------------------------------------------*/
 .profile-links {
 	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	display: none;
 }
 .profile-links a {
 	font-size: 18px;

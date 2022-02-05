@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", function (event) {
+	const profileDiv = document.getElementById("sidebarProfilesDiv");
+	profileDiv.style.display = "none";
+
   	const showNavbar = (toggleButtonId, sideBarId, bodyId, headerId) => {
     	const toggleButton = document.getElementById(toggleButtonId),
 		sideBar = document.getElementById(sideBarId),
@@ -10,6 +13,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			toggleButton.addEventListener("click", () => {
 				// show sidebar
 				sideBar.classList.toggle("show");
+				if (profileDiv.style.display === "none") {
+					profileDiv.style.display = "block";
+				} else {
+					profileDiv.style.display = "none";
+				}
+
 				// change icon
 				toggleButton.classList.toggle("bx-x");
 				// add padding to body
