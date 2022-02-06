@@ -135,6 +135,14 @@ a .bi::before {
 /*--------------------------------------------------------------
 	sidebar
 --------------------------------------------------------------*/
+.nav {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden
+}
+
 .l-navbar {
     position: fixed;
     top: 0;
@@ -147,25 +155,16 @@ a .bi::before {
     z-index: var(--z-fixed)
 }
 
-.sidebar-toggle {
-    color: var(--side-bar-bg-color);
-    font-size: var(--nav-icon-font-size);
-}
 .sidebar-menu-toggle-icon {
 	font-size: var(--nav-icon-font-size);
 	color: var(--white-color);
 }
 
-.nav {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden
-}
-
-.nav_logo,
-.nav_link {
+/*--------------------------------------------------------------
+	sidebar header (hamburger and name at top)
+--------------------------------------------------------------*/
+.sidebar-header,
+.sidebar-scroll-links {
     display: grid;
     grid-template-columns: max-content max-content;
     align-items: center;
@@ -173,27 +172,31 @@ a .bi::before {
     padding: .5rem 0 .5rem var(--nav-icon-left-padding)
 }
 
-
-.nav_logo-name {
+.sidebar-header-name {
     color: var(--white-color);
     font-weight: 700;
 }
 
-.nav_link {
+/*--------------------------------------------------------------
+	Sidebar link buttons
+--------------------------------------------------------------*/
+.sidebar-scroll-links {
     position: relative;
     color: var(---side-bar-icon-color-not-selected);
     margin-bottom: 1rem;
     transition: .3s
 }
-
-.nav_link:hover {
+.sidebar-scroll-links:hover {
 	color: var(--hover-link-color);
 }
 
-.nav_icon {
-    font-size: 1.5rem;
+.sidebar-scroll-link-icon {
+    font-size: var(--nav-icon-font-size);
 }
 
+.sidebar-scroll-link-active {
+	color: var(--white-color)
+}
 .show {
 	width: calc(var(--nav-width) + 156px);
 }
@@ -202,11 +205,8 @@ a .bi::before {
     padding-left: calc(var(--nav-width) + 1rem)
 }
 
-.active {
-    color: var(--white-color)
-}
 
-.active::before {
+.sidebar-scroll-link-active::before {
     content: '';
     position: absolute;
     left: 0;

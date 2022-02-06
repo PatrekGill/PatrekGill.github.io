@@ -2,12 +2,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	
 	PORT_fnc_expandSideBar("sidebarToggleIcon_id", "sidebar_id", "body_id", "header_id");
 	
-	/*===== LINK ACTIVE =====*/
-	const linkColor = document.querySelectorAll(".nav_link");
+	/*===== LINK sidebar-scroll-link-active =====*/
+	const linkColor = document.querySelectorAll(".sidebar-scroll-links");
   	function colorLink() {
 		if (linkColor) {
-			linkColor.forEach((l) => l.classList.remove("active"));
-			this.classList.add("active");
+			linkColor.forEach((l) => l.classList.remove("sidebar-scroll-link-active"));
+			this.classList.add("sidebar-scroll-link-active");
 		}
  	}
   	linkColor.forEach(
