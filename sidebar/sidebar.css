@@ -14,6 +14,7 @@
 	--nav-icon-left-padding: .75rem;
 	--nav-icon-font-size: 1.5rem;
 	--profile-icon-size: 1.5rem;
+	--section-title-text-color: #173B6F;
 }
 
 .btn-rounded-icon {
@@ -27,6 +28,20 @@
 	width: auto;
 	text-align: center;
 }
+
+.section-title {
+	color: var(--section-title-text-color);
+}
+.section-title::after {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 3px;
+	background: #149ddd;
+	bottom: 0;
+	left: 0;
+  }
+
 /*--------------------------------------------------------------
 	Profile Links
 --------------------------------------------------------------*/
@@ -71,7 +86,8 @@ body {
 	padding-left: calc(var(--nav-width) + 0.5rem);
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    transition: .5s
+    transition: .5s;
+	max-width: 1000px;
 }
 
 a {
