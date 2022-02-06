@@ -24,7 +24,7 @@ body {
 	font-family: var(--body-font);
 	font-size: var(--normal-font-size);
 	transition: .5s;
-	max-width: 1000px;
+	max-width: 1920px;
 }
 
 a {
