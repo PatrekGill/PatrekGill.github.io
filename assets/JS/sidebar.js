@@ -62,7 +62,7 @@ function PORT_fnc_expandSideBar(toggleButtonId, sideBarId, bodyId, headerId) {
 			// show sidebar
 			sideBar.classList.toggle("show");
 			// change icon
-			toggleButton.classList.toggle("bi-x");
+			toggleButton.classList.toggle("bi-x-lg");
 			// add padding to body
 			bodypd.classList.toggle("body-pd");
 			// add padding to header
