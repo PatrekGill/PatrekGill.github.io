@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
 :root {
-    --header-height: 3rem;
+	--header-height: 3rem;
     --nav-width: 50px;
     --side-bar-bg-color: #040b14;
 	--side-bar-bg-color-light: #212431;
@@ -17,6 +17,21 @@
 	--section-title-text-color: #173B6F;
 }
 
+body {
+	position: relative;
+	margin: calc(var(--header-height) + 1rem) 0 0 0;
+	padding-left: calc(var(--nav-width) + 0.5rem);
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	transition: .5s;
+	max-width: 1000px;
+}
+
+a {
+	text-decoration: none
+}
+
+
 .btn-rounded-icon {
 	justify-content: center;
 	align-items: center;
@@ -29,6 +44,9 @@
 	text-align: center;
 }
 
+/*--------------------------------------------------------------
+	Section Titles
+--------------------------------------------------------------*/
 .section-title {
 	color: var(--section-title-text-color);
 }
@@ -40,7 +58,7 @@
 	background: #149ddd;
 	bottom: 0;
 	left: 0;
-  }
+}
 
 /*--------------------------------------------------------------
 	Profile Links
@@ -72,29 +90,19 @@
 	transition: 0.3s;
 }
 
-
-a .bi::before {
-	line-height: 1.2;
-}
 .profile-links a:hover {
 	background-color: var(--hover-link-color);
 }
 
-body {
-    position: relative;
-	margin: calc(var(--header-height) + 1rem) 0 0 0;
-	padding-left: calc(var(--nav-width) + 0.5rem);
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    transition: .5s;
-	max-width: 1000px;
-}
-
-a {
-    text-decoration: none
+a .bi::before {
+	line-height: 1.2;
 }
 
 
+
+/*--------------------------------------------------------------
+	Header
+--------------------------------------------------------------*/
 .header {
     width: 100%;
     height: var(--header-height);
@@ -113,7 +121,7 @@ a {
 .header_toggle {
     color: var(--side-bar-bg-color);
     font-size: var(--nav-icon-font-size);
-    cursor: pointer
+    /* cursor: pointer */
 }
 
 .header_img {
@@ -129,6 +137,9 @@ a {
     width: 40px
 }
 
+/*--------------------------------------------------------------
+	sidebar
+--------------------------------------------------------------*/
 .l-navbar {
     position: fixed;
     top: 0;
@@ -158,11 +169,7 @@ a {
     padding: .5rem 0 .5rem var(--nav-icon-left-padding)
 }
 
-.nav_logo {
-    /* margin-bottom: 2rem */
-}
-
-.nav_logo-icon {
+.sidebar-menu-toggle-icon {
     font-size: var(--nav-icon-font-size);
     color: var(--white-color);
 }
@@ -214,12 +221,13 @@ a {
 	width: 100%;
 }
 
-/* Adjustments for larger screens */
+/*--------------------------------------------------------------
+	Adjustments for LARGER screens
+--------------------------------------------------------------*/
 @media screen and (min-width: 768px) {
 	:root {
 		--nav-width: 68px;
 		--nav-icon-left-padding: 1.35rem;
-		--nav-icon-font-size: 1.25rem;
 	}
 
     body {
