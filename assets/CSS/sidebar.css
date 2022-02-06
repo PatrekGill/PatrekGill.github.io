@@ -94,6 +94,7 @@ a {
 	background-color: var(--hover-link-color);
 }
 
+/* Bi icons are not perfectly vertically centered for some reason */
 a .bi::before {
 	line-height: 1.2;
 }
@@ -101,7 +102,7 @@ a .bi::before {
 
 
 /*--------------------------------------------------------------
-	Header
+	Header/topbar
 --------------------------------------------------------------*/
 .header {
     width: 100%;
@@ -116,12 +117,6 @@ a .bi::before {
     background-color: var(--white-color);
     z-index: var(--z-fixed);
     transition: .5s
-}
-
-.header_toggle {
-    color: var(--side-bar-bg-color);
-    font-size: var(--nav-icon-font-size);
-    /* cursor: pointer */
 }
 
 .header_img {
@@ -152,6 +147,15 @@ a .bi::before {
     z-index: var(--z-fixed)
 }
 
+.sidebar-toggle {
+    color: var(--side-bar-bg-color);
+    font-size: var(--nav-icon-font-size);
+}
+.sidebar-menu-toggle-icon {
+	font-size: var(--nav-icon-font-size);
+	color: var(--white-color);
+}
+
 .nav {
     height: 100%;
     display: flex;
@@ -169,10 +173,6 @@ a .bi::before {
     padding: .5rem 0 .5rem var(--nav-icon-left-padding)
 }
 
-.sidebar-menu-toggle-icon {
-    font-size: var(--nav-icon-font-size);
-    color: var(--white-color);
-}
 
 .nav_logo-name {
     color: var(--white-color);

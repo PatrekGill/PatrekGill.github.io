@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 	
-	PORT_fnc_expandSideBar("sidebar-toggle-icon", "side-bar", "body-pd", "header");
+	PORT_fnc_expandSideBar("sidebarToggleIcon_id", "sidebar_id", "body_id", "header_id");
 	
 	/*===== LINK ACTIVE =====*/
 	const linkColor = document.querySelectorAll(".nav_link");
