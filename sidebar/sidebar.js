@@ -1,6 +1,16 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 	const profileDiv = document.getElementById("sidebarProfilesDiv");
-	profileDiv.style.display = "none";
+	// profileDiv.style.display = "none";
+
+	function toggleProfilesDiv() {
+		if (!profileDiv.classList.contains("profile-links-shown")) {
+			// profileDiv.classList.remove("profile-links-hidden");
+			profileDiv.classList.add("profile-links-shown");
+		} else {
+			profileDiv.classList.remove("profile-links-shown");
+			// profileDiv.classList.add("profile-links-hidden");
+		}
+	}
 
   	const showNavbar = (toggleButtonId, sideBarId, bodyId, headerId) => {
     	const toggleButton = document.getElementById(toggleButtonId),
@@ -13,12 +23,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			toggleButton.addEventListener("click", () => {
 				// show sidebar
 				sideBar.classList.toggle("show");
-				if (profileDiv.style.display === "none") {
-					profileDiv.style.display = "block";
-				} else {
-					profileDiv.style.display = "none";
-				}
 
+				toggleProfilesDiv();
+				
 				// change icon
 				toggleButton.classList.toggle("bx-x");
 				// add padding to body
@@ -44,3 +51,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   	// Your code to run since DOM is loaded and ready
 });
+
+function calculateCollapsedScale(item) {
+	// The menu title can act as the marker for the collapsed state.
+	const collapsed = item.getBoundingClientRect();
+  
+	// Whereas the menu as a whole (title plus items) can act as
+	// a proxy for the expanded state.
+	const expanded = menu.getBoundingClientRect();
+	return {
+	  x: collapsed.width / expanded.width,
+	  y: collapsed.height / expanded.height
+	};
+  }
