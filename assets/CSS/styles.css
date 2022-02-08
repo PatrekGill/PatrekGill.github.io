@@ -21,6 +21,7 @@ body {
 	position: relative;
 	margin: calc(var(--header-height) + 1rem) 0 0 0;
 	padding-left: calc(var(--nav-width) + 0.5rem);
+	padding-right: 1rem;
 	font-family: var(--body-font);
 	font-size: var(--normal-font-size);
 	transition: .5s;
@@ -38,8 +39,12 @@ a {
 }
 
 /*--------------------------------------------------------------
-	Section Titles
+	Sections
 --------------------------------------------------------------*/
+section {
+	margin-bottom: 10px;
+	margin-bottom: 25px;
+}
 .section-title {
 	color: var(--section-title-text-color);
 }
@@ -51,5 +56,65 @@ a {
 	background: #149ddd;
 	bottom: 0;
 	left: 0;
-	margin-bottom: 25px;
+	
+}
+
+/*--------------------------------------------------------------
+	Misc
+--------------------------------------------------------------*/
+.portrait-image {
+	width: 212px;
+	height: 300px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+/*--------------------------------------------------------------
+	Adjustments for LARGER screens
+--------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+	:root {
+		--nav-width: 68px;
+		--nav-icon-left-padding: 1.35rem;
+	}
+
+    body {
+        padding-left: calc(var(--nav-width) + 1rem)
+    }
+
+    .header {
+        height: calc(var(--header-height) + 1rem);
+		padding: 0 2rem 0 calc(var(--nav-width) + 1rem)
+    }
+
+	.content {
+		margin-top: calc(var(--header-height) + 1rem);
+	}
+
+    .header_img {
+        width: 40px;
+        height: 40px
+    }
+
+    .header_img img {
+        width: 45px
+    }
+
+    .l-navbar {
+        padding: 1rem 1rem 0 0
+    }
+
+    .body-pd {
+        padding-left: calc(var(--nav-width) + 188px)
+    }
+
+	.flex-container {
+		flex-direction: row;
+	}
 }
