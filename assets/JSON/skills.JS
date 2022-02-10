@@ -3,14 +3,14 @@ const skills =
 	{
 		"id": 0,
 		"title": "HTML",
-		"icon": "",
+		"icon": "fa-brands fa-html5",
 		"description": "",
 		"rating": 100
 	},
 	{
 		"id": 1,
-		"title": "",
-		"icon": "",
+		"title": "CSS",
+		"icon": "fa-brands fa-css3-alt",
 		"description": "",
 		"rating": 100
 	}
