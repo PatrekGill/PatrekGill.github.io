@@ -21,7 +21,7 @@
 body {
 	position: relative;
 	margin: calc(var(--header-height) + 1rem) 0 0 0;
-	padding-left: calc(var(--nav-width) + 0.5rem);
+	padding-left: var(--nav-width);
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: var(--normal-font-size);
 	transition: .5s;
@@ -45,7 +45,7 @@ section {
 	padding-bottom: 25px;
 	padding-top: 25px;
 	padding-left: 25px;
-	padding-right: 1rem;
+	padding-right: 25px;
 }
 .section-title {
 	color: var(--section-title-text-color);
@@ -88,7 +88,9 @@ section {
 }
 
 .skillBar-name {
-	margin-bottom: 0.25rem;
+	margin-bottom: 0;
+	font-size: small;
+	font-weight: bold;
 }
 
 .skillBar {

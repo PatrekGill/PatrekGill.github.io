@@ -13,5 +13,12 @@ const skills =
 		"icon": "fa-brands fa-css3-alt",
 		"description": "",
 		"rating": 100
+	},
+	{
+		"id": 2,
+		"title": "Java",
+		"icon": "fa-brands fa-java",
+		"description": "",
+		"rating": 50
 	}
 ];

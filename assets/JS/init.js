@@ -15,6 +15,7 @@ window.addEventListener('load', () => {
     })
 });
 
+// init skill bars list
 window.addEventListener('load', () => {
 	const skillBarsDiv_right = document.getElementById("skillBarsDivRightColumn_id");
 	const skillBarsDiv_left = document.getElementById("skillBarsDivLeftColumn_id");
@@ -40,7 +41,6 @@ window.addEventListener('load', () => {
 
 			const progressDiv = document.createElement("div");
 			progressDiv.classList.add("progress");
-			
 
 			const barDiv = document.createElement("div");
 			barDiv.classList.add("progress-bar");
