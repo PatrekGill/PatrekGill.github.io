@@ -1,3 +1,40 @@
+const skills = 
+[
+	{
+		"id": 0,
+		"title": "HTML",
+		"icon": "fa-brands fa-html5",
+		"description": "",
+		"rating": 100
+	},
+	{
+		"id": 1,
+		"title": "CSS",
+		"icon": "fa-brands fa-css3-alt",
+		"description": "",
+		"rating": 100
+	},
+	{
+		"id": 2,
+		"title": "Java",
+		"icon": "fa-brands fa-java",
+		"description": "",
+		"rating": 50
+	}
+];
+
+const projects =
+[
+	{
+		"id": 0,
+		"title": "",
+		"deployedLink": "",
+		"repoLink": "",
+		"imageUrl": "",
+		"description": ""
+	}
+];
+
 // Enable Bootstrap popovers
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
