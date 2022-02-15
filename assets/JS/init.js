@@ -35,9 +35,12 @@ window.addEventListener('load', () => {
 	skills.forEach(
 		(skill) => {
 			const columnDiv = getBarColumnDiv();
+			const barRowDiv = document.createElement("div");
+			columnDiv.appendChild(barRowDiv);
+
 			const progressDiv = document.createElement("div");
 			progressDiv.classList.add("progress");
-			columnDiv.appendChild(progressDiv);
+			
 
 			const barDiv = document.createElement("div");
 			barDiv.classList.add("progress-bar");
@@ -45,14 +48,17 @@ window.addEventListener('load', () => {
 			barDiv.setAttribute("aria-valuemax","100");
 			barDiv.setAttribute("aria-valuemin","0");
 			barDiv.setAttribute("role","progressbar");
+			progressDiv.classList.add("skillBar");
 
 			const skillNameParagraph = document.createElement("p");
 			skillNameParagraph.textContent = `${skill.title}`;
+			skillNameParagraph.classList.add("skillBar-name");
 
 			barDiv.style = `width: ${skill.rating}%`;
 			barDiv.textContent = `${skill.rating}%`;
 			
-			progressDiv.appendChild(skillNameParagraph);
+			barRowDiv.appendChild(skillNameParagraph);
+			barRowDiv.appendChild(progressDiv);
 			progressDiv.appendChild(barDiv);
 			
 		}
