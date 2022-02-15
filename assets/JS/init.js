@@ -41,14 +41,18 @@ window.addEventListener('load', () => {
 
 			const barDiv = document.createElement("div");
 			barDiv.classList.add("progress-bar");
-			barDiv.setAttribute("aria-valuenow","25");
+			barDiv.setAttribute("aria-valuenow",skill.rating);
 			barDiv.setAttribute("aria-valuemax","100");
 			barDiv.setAttribute("aria-valuemin","0");
 			barDiv.setAttribute("role","progressbar");
 
-			barDiv.style = "width: 25%";
-			barDiv.textContent = "25%";
+			const skillNameParagraph = document.createElement("p");
+			skillNameParagraph.textContent = `${skill.title}`;
 
+			barDiv.style = `width: ${skill.rating}%`;
+			barDiv.textContent = `${skill.rating}%`;
+			
+			progressDiv.appendChild(skillNameParagraph);
 			progressDiv.appendChild(barDiv);
 			
 		}
