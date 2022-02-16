@@ -4,6 +4,16 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   	return new bootstrap.Popover(popoverTriggerEl)
 });
 
+// function addPopoverToElement(
+// 	element,
+// 	title,
+// 	contents,
+// 	trigger,
+// 	placment = "",
+// 	container = "body"
+// ) {
+	
+// };
 
 // Enable Animated On Scroll
 window.addEventListener('load', () => {
@@ -32,6 +42,10 @@ window.addEventListener('load', () => {
 		return div;
 	};
 
+	// sort skills by highest rated
+	skills.sort((a,b) => {
+		return b.rating - a.rating;
+	});
 
 	skills.forEach(
 		(skill) => {
@@ -56,6 +70,13 @@ window.addEventListener('load', () => {
 			skillNameParagraph.textContent = `${skill.title.toUpperCase()}`;
 			skillNameParagraph.classList.add("skillBar-name");
 			textDiv.appendChild(skillNameParagraph);
+
+			new bootstrap.Popover(thisSkillDiv,{
+				trigger: "hover",
+				placement: "top",
+				title: skill.title,
+				content: skill.description
+			});
 			
 			// create "progress" div for progress bar
 			const progressDiv = document.createElement("div");
