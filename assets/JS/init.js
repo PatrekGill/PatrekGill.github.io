@@ -35,32 +35,46 @@ window.addEventListener('load', () => {
 
 	skills.forEach(
 		(skill) => {
+			// create div to hold the entirety of this skill's relevant stuff
 			const columnDiv = getBarColumnDiv();
-			const barRowDiv = document.createElement("div");
-			columnDiv.appendChild(barRowDiv);
+			const thisSkillDiv = document.createElement("div");
+			thisSkillDiv.classList.add("skillBar-div");
+			columnDiv.appendChild(thisSkillDiv);
+			
+			// create div for text and icon for the skill
+			const textDiv = document.createElement("div");
+			thisSkillDiv.appendChild(textDiv);
 
+			// add the skill icon
+			const skillIcon = document.createElement("i");
+			textDiv.appendChild(skillIcon);
+			skillIcon.classList.value = skill.icon;
+			skillIcon.classList.add("skillBar-icon");
+
+			// add the skill title text
+			const skillNameParagraph = document.createElement("p");
+			skillNameParagraph.textContent = `${skill.title.toUpperCase()}`;
+			skillNameParagraph.classList.add("skillBar-name");
+			textDiv.appendChild(skillNameParagraph);
+			
+			// create "progress" div for progress bar
 			const progressDiv = document.createElement("div");
 			progressDiv.classList.add("progress");
+			progressDiv.classList.add("skillBar");
+			thisSkillDiv.appendChild(progressDiv);
 
+			// create the actual progress-bar div
 			const barDiv = document.createElement("div");
 			barDiv.classList.add("progress-bar");
 			barDiv.setAttribute("aria-valuenow",skill.rating);
 			barDiv.setAttribute("aria-valuemax","100");
 			barDiv.setAttribute("aria-valuemin","0");
 			barDiv.setAttribute("role","progressbar");
-			progressDiv.classList.add("skillBar");
-
-			const skillNameParagraph = document.createElement("p");
-			skillNameParagraph.textContent = `${skill.title}`;
-			skillNameParagraph.classList.add("skillBar-name");
-
 			barDiv.style = `width: ${skill.rating}%`;
 			barDiv.textContent = `${skill.rating}%`;
-			
-			barRowDiv.appendChild(skillNameParagraph);
-			barRowDiv.appendChild(progressDiv);
+
 			progressDiv.appendChild(barDiv);
-			
+
 		}
 	);
 });

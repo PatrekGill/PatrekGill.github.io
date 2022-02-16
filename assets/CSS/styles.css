@@ -91,10 +91,20 @@ section {
 	margin-bottom: 0;
 	font-size: small;
 	font-weight: bold;
+	font-variant: small-caps;
+}
+
+.skillBar-div {
+	margin-top: 0.5rem;
 }
 
 .skillBar {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+}
+
+.skillBar-icon {
+	float: left;
+	padding-right: 0.25rem;
 }
 
 
