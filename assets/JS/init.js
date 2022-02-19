@@ -87,6 +87,8 @@ window.addEventListener('load', () => {
 			// create the actual progress-bar div
 			const barDiv = document.createElement("div");
 			barDiv.classList.add("progress-bar");
+			barDiv.classList.add("skillBar-color");
+			barDiv.classList.add("bg-gradient");
 			barDiv.setAttribute("aria-valuenow",skill.rating);
 			barDiv.setAttribute("aria-valuemax","100");
 			barDiv.setAttribute("aria-valuemin","0");

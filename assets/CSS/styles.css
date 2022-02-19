@@ -102,6 +102,10 @@ section {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
 }
 
+.skillBar-color {
+	background-color: var(--section-title-text-color);
+}
+
 .skillBar-icon {
 	float: left;
 	padding-right: 0.25rem;
