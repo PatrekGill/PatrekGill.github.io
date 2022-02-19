@@ -55,5 +55,19 @@ const skills =
 		"icon": "fa-solid fa-database",
 		"description": "SQL is the database language I know best. I learned it at Skill Distillery and while we used MySQL technically, our implementations of it were database agnostic.",
 		"rating": 50
+	},
+	{
+		"id": 8,
+		"title": "Javascript",
+		"icon": "fa-brands fa-js-square",
+		"description": "",
+		"rating": 30
+	},
+	{
+		"id": 9,
+		"title": "SQF",
+		"icon": "icons8 bi-logo",
+		"description": "",
+		"rating": 85
 	}
 ];
