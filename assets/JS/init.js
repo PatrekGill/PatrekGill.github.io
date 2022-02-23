@@ -41,9 +41,28 @@ function getBarColumnDiv() {
 	useLeft = !useLeft;
 	return div;
 };
+
 function addMiscSkill(skill) {
+	const miscList = document.getElementById("miscSkillsList_id");
+	const listItem = document.createElement("li");
+	const textDiv = document.createElement("div");
 	
-}
+	// add icon
+	const skillIcon = document.createElement("i");
+	textDiv.appendChild(skillIcon);
+	skillIcon.classList.value = skill.icon;
+	skillIcon.classList.add("skillBar-icon");
+
+	// add the skill title text
+	const skillNameParagraph = document.createElement("p");
+	skillNameParagraph.textContent = `${skill.title.toUpperCase()}`;
+	skillNameParagraph.classList.add("skillBar-name");
+	textDiv.appendChild(skillNameParagraph);
+
+	listItem.appendChild(textDiv);
+	miscList.appendChild(listItem);
+};
+
 function addSkillBar(skill) {
 	// create div to hold the entirety of this skill's relevant stuff
 	const columnDiv = getBarColumnDiv();
@@ -104,7 +123,7 @@ window.addEventListener('load', () => {
 
 	skills.forEach(
 		(skill) => {
-			if (skill.rating <= 0) {
+			if (skill.rating > 0) {
 				addSkillBar(skill);
 
 			} else {

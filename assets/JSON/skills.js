@@ -80,7 +80,7 @@ const skills =
 	{
 		"id": 11,
 		"title": "Full-Stack Development",
-		"icon": "fa-solid fa-chart-tree-map",
+		"icon": "fa-solid fa-layer-group",
 		"description": "",
 		"rating": -1
 	},
@@ -171,14 +171,14 @@ const skills =
 	{
 		"id": 24,
 		"title": "Object Relational Mapping",
-		"icon": "fa-brands fa-list",
+		"icon": "fa-solid fa-list",
 		"description": "",
 		"rating": -1
 	},
 	{
 		"id": 25,
 		"title": "Relational Databases",
-		"icon": "fa-brands fa-chart-network",
+		"icon": "fa-solid fa-diagram-project",
 		"description": "",
 		"rating": -1
 	},
