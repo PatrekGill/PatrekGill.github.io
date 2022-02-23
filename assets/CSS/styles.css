@@ -111,6 +111,16 @@ section {
 	padding-right: 0.25rem;
 }
 
+.skillList-misc {
+	column-count: 1;
+	column-gap: auto;
+	column-rule-style: solid;
+	column-rule-width: 1px;
+	column-rule-color: lightblue;
+}
+.skillList-misc-div {
+	margin-top: 2rem;
+}
 
 /*--------------------------------------------------------------
 	Adjustments for LARGER screens
@@ -154,5 +164,9 @@ section {
 
 	.flex-container {
 		flex-direction: row;
+	}
+
+	.skillList-misc {
+		column-count: 3;
 	}
 }
