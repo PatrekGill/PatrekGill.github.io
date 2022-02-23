@@ -44,7 +44,7 @@ function getBarColumnDiv() {
 
 function addMiscSkill(skill) {
 	const miscList = document.getElementById("miscSkillsList_id");
-	const listItem = document.createElement("li");
+	// const listItem = document.createElement("li");
 	const textDiv = document.createElement("div");
 	
 	// add icon
@@ -56,11 +56,11 @@ function addMiscSkill(skill) {
 	// add the skill title text
 	const skillNameParagraph = document.createElement("p");
 	skillNameParagraph.textContent = `${skill.title.toUpperCase()}`;
-	skillNameParagraph.classList.add("skillBar-name");
+	skillNameParagraph.classList.add("skillList-misc-name");
 	textDiv.appendChild(skillNameParagraph);
 
-	listItem.appendChild(textDiv);
-	miscList.appendChild(listItem);
+	// listItem.appendChild(textDiv);
+	miscList.appendChild(textDiv);
 };
 
 function addSkillBar(skill) {

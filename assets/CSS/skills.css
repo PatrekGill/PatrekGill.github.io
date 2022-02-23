@@ -1,0 +1,48 @@
+.skillBar-column {
+	flex-grow: 1;
+}
+
+.skillBar-name {
+	margin-bottom: 0;
+	font-size: small;
+	font-weight: bold;
+	font-variant: small-caps;
+	vertical-align: middle;
+}
+
+.skillBar-div {
+	margin-top: 0.5rem;
+}
+
+.skillBar {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25);
+}
+
+.skillBar-color {
+	background-color: var(--section-title-text-color);
+}
+
+.skillBar-icon {
+	float: left;
+	padding-right: 0.25rem;
+}
+
+.skillList-misc {
+	column-count: 1;
+	column-gap: auto;
+	column-rule-style: solid;
+	column-rule-width: 1px;
+	column-rule-color: lightblue;
+}
+
+.skillList-misc-div {
+	margin-top: 2rem;
+}
+
+.skillList-misc-name {
+	margin-bottom: 0.5rem;
+	font-size: medium;
+	font-weight: 400;
+	font-variant: small-caps;
+	vertical-align: middle;
+}
