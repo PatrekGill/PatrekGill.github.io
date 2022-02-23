@@ -25,7 +25,7 @@ body {
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: var(--normal-font-size);
 	transition: .5s;
-	max-width: 1920px;
+	/* max-width: 1920px; */
 }
 
 a {
@@ -67,6 +67,16 @@ section {
 .section-title-sub {
 	color: var(--section-title-text-color);
 	margin-top: 1rem;
+}
+.section-title-sub::after {
+	content: "";
+	display: block;
+	width: 25px;
+	height: 3px;
+	background: #149ddd;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 15px;
 }
 
 /*--------------------------------------------------------------
