@@ -68,6 +68,133 @@ const skills =
 		"title": "SQF",
 		"icon": "icons8 bi-logo",
 		"description": "",
-		"rating": 85
+		"rating": 80
+	},
+	{
+		"id": 10,
+		"title": "MySQL",
+		"icon": "fa-solid fa-database",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 11,
+		"title": "Full-Stack Development",
+		"icon": "fa-solid fa-chart-tree-map",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 12,
+		"title": "Test Driven Development",
+		"icon": "fa-solid fa-list-check",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 13,
+		"title": "Spring MVC",
+		"icon": "icons8 icons8-spring-logo",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 14,
+		"title": "Java Database Connectivity (JDBC)",
+		"icon": "fa-brands fa-java",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 15,
+		"title": "Java Server Pages (JSP)",
+		"icon": "fa-brands fa-java",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 16,
+		"title": "JSON",
+		"icon": "fa-brands fa-js-square",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 17,
+		"title": "Amazon Web Services (AWS)",
+		"icon": "fa-brands fa-aws",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 18,
+		"title": "Bootstrap",
+		"icon": "fa-brands fa-bootstrap",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 19,
+		"title": "Gradle",
+		"icon": "icons8 gradle-logo",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 20,
+		"title": "RESTful Services",
+		"icon": "icons8 icons8-api",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 21,
+		"title": "Agile Development",
+		"icon": "icons8 icons8-agile",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 22,
+		"title": "Unity",
+		"icon": "fa-brands fa-unity",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 23,
+		"title": "git",
+		"icon": "fa-brands fa-git-alt",
+		"description": "",
+		"rating": 50
+	},
+	{
+		"id": 24,
+		"title": "Object Relational Mapping",
+		"icon": "fa-brands fa-list",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 25,
+		"title": "Relational Databases",
+		"icon": "fa-brands fa-chart-network",
+		"description": "",
+		"rating": -1
+	},
+	{
+		"id": 26,
+		"title": "Angular",
+		"icon": "fa-brands fa-angular",
+		"description": "Angular was taught to me at Skill Distillery and I make use of it in my personal projects",
+		"rating": 20
+	},
+	{
+		"id": 27,
+		"title": "Typescript",
+		"icon": "icons8 icons8-typescript",
+		"description": "My exposure to Typescript has been through my use of it with Angular",
+		"rating": 20
 	}
+	
 ];
