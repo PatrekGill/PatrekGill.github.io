@@ -1,0 +1,10 @@
+.resume-column {
+	flex-grow: 1;
+}
+
+.resume-title {
+	font-weight: 700;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	color: var(--secondary-title-color);
+}

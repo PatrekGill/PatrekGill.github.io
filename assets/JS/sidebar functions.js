@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 	
-	PORT_fnc_expandSideBar("sidebarToggleIcon_id", "sidebar_id", "body_id", "header_id");
+	PORT_fnc_sideBar_expand("sidebarToggleIcon_id", "sidebar_id", "body_id", "header_id");
 	
 	/*===== LINK sidebar-scroll-link-active =====*/
 	const linkColor = document.querySelectorAll(".sidebar-scroll-links");
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 /* ----------------------------------------------------------------------------
-Function: PORT_fnc_toggleProfilesDiv
+Function: PORT_fnc_sidebar_toggleProfilesDiv
 
 Description:
 	Adjusts the whehter or not the div in the sidebar that has the profile 
@@ -30,14 +30,14 @@ Parameters:
 Returns:
 	NOTHING
 ---------------------------------------------------------------------------- */
-function PORT_fnc_toggleProfilesDiv() {
+function PORT_fnc_sidebar_toggleProfilesDiv() {
 	const profileDiv = document.getElementById("sidebar-profiles-div_id");
 	profileDiv.classList.toggle("profile-links-shown");
 }
 
 
 /* ----------------------------------------------------------------------------
-Function: PORT_fnc_expandSideBar
+Function: PORT_fnc_sideBar_expand
 
 Description:
 	Fires on the click event of the sidebar menu (hamburger) click. Grows it and
@@ -49,7 +49,7 @@ Parameters:
 Returns:
 	NOTHING
 ---------------------------------------------------------------------------- */
-function PORT_fnc_expandSideBar(toggleButtonId, sideBarId, bodyId, headerId) {
+function PORT_fnc_sideBar_expand(toggleButtonId, sideBarId, bodyId, headerId) {
 
 	const toggleButton = document.getElementById(toggleButtonId),
 		sideBar = document.getElementById(sideBarId),
@@ -68,7 +68,7 @@ function PORT_fnc_expandSideBar(toggleButtonId, sideBarId, bodyId, headerId) {
 			// add padding to header
 			headerpd.classList.toggle("body-pd");
 			// show the profile icons (Github & LinkedIn)
-			PORT_fnc_toggleProfilesDiv();
+			PORT_fnc_sidebar_toggleProfilesDiv();
 		});
 	}
 }
