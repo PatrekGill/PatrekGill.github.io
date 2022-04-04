@@ -1,10 +1,37 @@
 .resume-column {
-	flex-grow: 1;
+    flex-grow: 1;
 }
 
 .resume-title {
-	font-weight: 700;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	color: var(--secondary-title-color);
+    font-weight: 700;
+    color: var(--secondary-title-color);
+}
+
+.resume-title-section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 3px solid var(--progress-bar-color);
+}
+
+.resume-item h4 {
+	position: relative;
+	left: -22px;
+	top: -5px;
+}
+
+.resume-item h4::before {
+	content: "";
+	position: relative;
+	height: 20px;
+	width: 20px;
+	background: #fff;
+	border-radius: 50%;
+	display: inline-flex;
+	border: 2px solid var(--progress-bar-color);
+	left: -10px;
 }

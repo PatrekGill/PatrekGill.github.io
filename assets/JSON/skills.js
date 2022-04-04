@@ -195,6 +195,13 @@ const skills =
 		"icon": "icons8 icons8-typescript",
 		"description": "My exposure to Typescript has been through my use of it with Angular",
 		"rating": 20
+	},
+	{
+		"id": 28,
+		"title": "React JS",
+		"icon": "fa-brands fa-react",
+		"description": "I started my work with React JS when I arrived at Flexion",
+		"rating": 10
 	}
 	
 ];
