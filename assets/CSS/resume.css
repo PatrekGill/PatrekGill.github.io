@@ -5,6 +5,7 @@
 .resume-title {
     font-weight: 700;
     color: var(--secondary-title-color);
+	margin-bottom: 1rem;
 }
 
 .resume-title-section {
@@ -18,20 +19,20 @@
     border-left: 3px solid var(--progress-bar-color);
 }
 
-.resume-item h4 {
+.resume-item h5 {
 	position: relative;
 	left: -22px;
-	top: -5px;
+	top: -7px;
 }
 
-.resume-item h4::before {
+.resume-item h5::before {
 	content: "";
 	position: relative;
-	height: 20px;
-	width: 20px;
+	height: 16px;
+	width: 16px;
 	background: #fff;
 	border-radius: 50%;
 	display: inline-flex;
 	border: 2px solid var(--progress-bar-color);
-	left: -10px;
+	left: -8px;
 }
