@@ -22,7 +22,11 @@
 .resume-item h5 {
 	position: relative;
 	left: -22px;
-	top: -7px;
+	top: -6px;
+}
+
+.resume-item p {
+	margin-bottom: 0.25rem;
 }
 
 .resume-item h5::before {
@@ -34,5 +38,5 @@
 	border-radius: 50%;
 	display: inline-flex;
 	border: 2px solid var(--progress-bar-color);
-	left: -8px;
+	left: -7.75px;
 }
